@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+     margin: 0;
+    padding-top: 70px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.auth-page {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.auth-page .form-box {
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.auth-page h1 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+}
+
+button, .btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background: #1d4ed8;
+}
+
+.form-box button {
+    width: 100%;
+}
+
+.small {
+    padding: 7px 12px;
+    font-size: 13px;
+    width: auto !important;
+}
+
+.danger {
+    background: #dc2626;
+}
+
+.danger:hover {
+    background: #b91c1c;
+}
+
+.message {
+    background: #fef9c3;
+    color: #713f12;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+       position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.navbar a {
+    color: white;
+    margin-left: 18px;
+}
+
+.navbar a:hover {
+    color: #09c425;
+    margin-left: 18px;
+}
+
+.navbar .logout {
+    background: #dc2626;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    min-width: 250px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #1e3a8a;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f1f5f9;
+}
+
+.total-row td {
+    background: #f1f5f9;
+}
+
+.thumb {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.actions form, form.inline {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.qty {
+    width: 70px;
+}
+
+.status {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.product img, .no-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.no-image {
+    background: #e5e7eb;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product h3 {
+    margin: 10px 0 5px;
+}
+
+.desc {
+    color: #6b7280;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stock {
+    color: #166534;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.out {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.product button {
+    width: 100%;
+}
